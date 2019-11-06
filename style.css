@@ -1,13 +1,16 @@
-*{
-	box-sizing: border-box;
+
+* {
+  box-sizing: border-box;
 }
 body{
-	margin: 0;
-	font-size: 20px;
-	font-family: Arial, Helvetica, sans serif;
+  margin: 0;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans serif;
+
+
 }
 header{
-	margin: 0;
+  margin: 0;
 }
 
 nav {
@@ -17,7 +20,7 @@ nav {
     height: 100px;
 }
 img{
-	float: left;
+  float: left;
 }
 
 a {
@@ -40,32 +43,58 @@ li {
     margin: 0px 20px;
     padding-top: 20px;
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 600px) {
     li {
+      max-width: 300px;
         display: block;
         margin: 5px 0px;
+        max-height: 300px;
     }
     nav{
-    	min-height: 200px;
+      min-height: 200px;
     }
-    img, section{
-    	display: block;
-    	max-width: 150px;
+    img{
+      max-height: 50px;
+      max-width: 100px;
+    }
+
+    section, h2{
+      display: block;
+      max-width: 200px;
+      padding: 8px;
 
     }
 
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
  .text, input[type=text] {
     
       }
 }
+@media only screen and (orientation: portrait) {
+  body {
+    background-color: lightblue;
+  }
+}
+h2{
+  text-align: center;
+}
 section{
-	min-height: 350px;
-	background-color: #fff;
-	margin: auto;
-	width: 700px;
-	
+  min-height: 477px;
+  background-color: #fff;
+  margin: auto;
+  width: 700px;
+  border: 3px solid #7B241C;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  border-top-color: #16DB93;
+  border-bottom-color: #A4036F;
+  border-left-color: #EFEA5A;
+  border-right-color: #FE5E41;
+  border-width: 10px;
+  box-sizing: border-box;
+  
 }
 input[type=text] {
   padding: 6px;
@@ -92,5 +121,5 @@ footer{
   background-color: #7B241C;
   color: #fff;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 20px;
 }
