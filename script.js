@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$(".toggle-nav").click(function(){
-		$(".menu ul li").slideDown(1000);
+		$(".menu ul li").slideToggle(1000);
 
 	});
 });
