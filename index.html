@@ -7,9 +7,15 @@
 	<meta name="Keywords" content="Find any location, Weather, Temperature, Share Map">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	<script src="script.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+	
+	
+	
 
 </head>
 <body>
@@ -19,11 +25,7 @@
 		    <div class="nav"><ul>
 		        <li><a id="active" href="index.html">Home</a></li>
 		        <li><a href="about.html" >About</a></li>
-		        <li><a href="contact.html">Contact Us</a></li>
-<<<<<<< HEAD
-		        <li><a href="map.html">Map</a></li>
-		    </ul>
-=======
+		        <li><a href="contact.html">Contact</a></li>
 		    </ul></div>
 		   <div class="social">
 		   	<ul>
@@ -33,17 +35,20 @@
 				<li><a href="youtube.com"><i class="fa fa-youtube"></i></a></li>
 		   	</ul>
 		   </div>
->>>>>>> develop
 		</nav>
 	</header>
 
 	<section>
-		 <input type="text" placeholder="Search.."><button id="btn" type="button">Geo-Search</button>
+		<form>
+		 <input id="search" type="text" placeholder="Search..">
+		 <input type="submit" id="btn" name="submit" value="Geo-Search ...">
+		 <span id="error"></span>
+		</form>
 		</section>
 
 <footer>All Right Reserver | &copy; Geo-search 2019</footer>
 <script src="script.js"></script>
 </body>
 
-<script src="jquery-3.4.1.min.js"></script>
+
 </html>

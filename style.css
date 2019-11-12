@@ -85,11 +85,11 @@ input[type=text] {
     margin: 0;
     padding: 14px;
   }
-  #btn{
+  input[type=submit]{
     background-color: #7B241C;
     color: #fff;
     width: 50%;
-    height: 10%;
+    height: 20%;
     cursor: pointer;
     margin-top: 5px;
   }
