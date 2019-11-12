@@ -177,10 +177,14 @@ section{
   border-right-color: #FE5E41;
   border-width: 10px;
 }
-
-
-
-
+form{
+  text-align: center;
+  margin: auto;
+}
+#display{
+  text-align: center;
+  margin: auto;
+}
 
 footer{
   height: 40px;

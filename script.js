@@ -12,14 +12,20 @@ $(document).ready(function(){
 			$('#error').html('Please enter a valid loaction');
 		}else{
 			$.ajax({
-				url: 'http://api.openweathermap.org/data/2.5/weather?q=' +location + '&units=metric' + '&APPID=1a3d68088228d76d61fa392c2a9ade0a',	
+				url: 'https://api.openweathermap.org/data/2.5/weather?q=' + location + '&units=metric' + '&APPID=1a3d68088228d76d61fa392c2a9ade0a',	
 
 				type: "GET",
 				datatype: JSON,
 				success: function(data){
-					console.log(data);
+					let display = displayData(data);
+					$('#display').html(display);
+					$('#search').val('');
 				}
 			});
 		}
 	});
 });
+function displayData(data){
+return "<h4> Current weather:</h4>"  + "<h5>  </h5>" + data.weather[0].main;
+
+}
