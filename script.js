@@ -9,7 +9,7 @@ $(document).ready(function(){
 	$('#btn').click(function(){
 		let location = $('#search').val();
 		if(location == ''){
-			$('#error').html('Please enter a loaction');
+			$('#error').html('Please enter a valid loaction');
 		}else{
 			$.ajax({
 				url: 'http://api.openweathermap.org/data/2.5/weather?q=' +location + '&units=metric' + '&APPID=1a3d68088228d76d61fa392c2a9ade0a',	
