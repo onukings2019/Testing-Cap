@@ -20,6 +20,7 @@ $(document).ready(function(){
 					let display = displayData(data);
 					$('#display').html(display);
 					$('#search').val('');
+					
 				}
 			});
 		}
