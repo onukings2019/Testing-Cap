@@ -27,7 +27,7 @@ $(document).ready(function(){
 
 });
 function displayData(data){
-	return "<h4> Current weather:</h4>"  + "<h5>  </h5>" + data.weather[0].main;
+	return "<h4> Current weather:</h4>"  + "<h5>  </h5>" + data.weather[0].main + "&nbsp; description: " +data.weather[0].description;
 	
 
 }
