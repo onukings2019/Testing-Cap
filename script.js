@@ -17,17 +17,9 @@ $(document).ready(function(){
 				type: "GET",
 				datatype: JSON,
 				success: function(data){
-					let display = displayData(data);
-					$('#display').html(display);
-					$('#search').val('');
-
 					console.log(data);
 				}
 			});
 		}
 	});
 });
-function displayData(data){
-return "<h4> Current weather for:</h4>"  + location + "<h5>  </h5>" + data.weather[0].main;
-
-}
