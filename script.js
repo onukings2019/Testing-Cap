@@ -15,6 +15,7 @@ $(document).ready(function(){
 				type: "GET",
 				datatype: JSON,
 				success: function(data){
+					let cityName = $('#search').val()
 					let display = displayData(data);
 					$('#display').html(display);
 					$('#search').val('');
@@ -27,7 +28,7 @@ $(document).ready(function(){
 
 });
 function displayData(data){
-	return "<h4> Current weather:</h4>"  + "<h5>  </h5>" + data.weather[0].main + "&nbsp; description: " +data.weather[0].description;
+	return "<h4> Current weatherfor :</h4>"  + "<h5>  </h5>" + cityName  + data.weather[0].main + "&nbsp; description: " +data.weather[0].description;
 	
 
 }
